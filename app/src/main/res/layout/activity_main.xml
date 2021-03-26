@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Enter Amount"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="125dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+        android:layout_gravity="center"
+        android:textColor="@color/teal_700"/>
+
+
+    <Spinner
+        android:id="@+id/from_spinner"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:layout_gravity="center"
+        android:textColor="@color/teal_700"/>
+
+    <Spinner
+        android:id="@+id/to_spinner"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+         />
+
+    <Button
+        android:id="@+id/convertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:backgroundTint="@color/teal_700"
+       android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <EditText
+        android:id="@+id/convertedAmount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Result"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
